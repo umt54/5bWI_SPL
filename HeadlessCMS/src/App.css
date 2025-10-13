@@ -1,0 +1,106 @@
+
+:root {
+  --bg: #2c2c0f;        
+  --card: #e6e6e6;      
+  --text: #111;
+  --radius: 14px;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px 80px;
+}
+
+.title {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 900;
+  text-align: right;
+  letter-spacing: 1px;
+  margin: 20px 0 40px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 40px 50px;
+  justify-items: center;
+}
+
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  width: 240px;
+  transition: transform 0.2s ease;
+}
+
+
+
+.card-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card-body {
+  padding: 14px 16px 18px;
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.card-text {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  font-size: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  line-height: 1.4;
+}
+
+.card-list a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted #777;
+}
+
+
+
+
+
