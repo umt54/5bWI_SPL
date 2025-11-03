@@ -1,7 +1,6 @@
-
 :root {
-  --bg: #2c2c0f;        
-  --card: #e6e6e6;      
+  --bg: #2d2b03;
+  --card: #e6e6e6;
   --text: #111;
   --radius: 14px;
   --shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
@@ -20,7 +19,6 @@ body,
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
-
 .page {
   max-width: 1200px;
   margin: 0 auto;
@@ -36,7 +34,6 @@ body,
   margin: 20px 0 40px;
 }
 
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -44,17 +41,12 @@ body,
   justify-items: center;
 }
 
-
 .card {
-  background: var(--card);
-  border-radius: var(--radius);
+  background-color: white;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: var(--shadow);
   width: 240px;
-  transition: transform 0.2s ease;
 }
-
-
 
 .card-img {
   width: 100%;
@@ -62,7 +54,6 @@ body,
   object-fit: cover;
   display: block;
 }
-
 
 .card-body {
   padding: 14px 16px 18px;
@@ -80,10 +71,8 @@ body,
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 12px;
   line-height: 1.4;
-  color: var(--text);
   opacity: 0.85;
 }
-
 
 .card-list {
   list-style: none;
@@ -97,10 +86,5 @@ body,
 .card-list a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px dotted #777;
+  border-bottom: 1px dashed;
 }
-
-
-
-
-

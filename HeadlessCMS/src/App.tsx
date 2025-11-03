@@ -11,7 +11,9 @@ export default function App() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch("https://fakerapi.it/api/v2/persons?_quantity=10");
+        const res = await fetch(
+          "https://fakerapi.it/api/v2/persons?_quantity=10"
+        );
         if (!res.ok) throw new Error(String(res.status));
         const json: ApiResponse = await res.json();
         setPeople(json.data ?? []);
@@ -31,7 +33,9 @@ export default function App() {
     <main className="page">
       <h1 className="title">HTL Dornbirn 5bWI</h1>
       <section className="grid">
-        {people.map((p) => <PersonCard key={p.id} person={p} />)}
+        {people.map((p) => (
+          <PersonCard key={p.id} person={p} />
+        ))}
       </section>
     </main>
   );

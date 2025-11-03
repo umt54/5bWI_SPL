@@ -9,7 +9,7 @@ export type Person = {
   website: string;
   image?: string;
   address: { city: string; country: string };
-};  
+};
 
 type Props = { person: Person };
 
@@ -33,11 +33,27 @@ export default function PersonCard({ person }: Props) {
           turpis. Nunc imperdiet augue dis suspendisse.
         </p>
         <ul className="card-list">
-          <li><strong>E-Mail:</strong> <a href={`mailto:${person.email}`}>{person.email}</a></li>
-          <li><strong>Telefon:</strong> <a href={`tel:${person.phone}`}>{person.phone}</a></li>
-          <li><strong>Geburtstag:</strong> {bday}</li>
-          <li><strong>Ort:</strong> {person.address.city}, {person.address.country}</li>
-          <li><strong>Website:</strong> <a href={person.website} target="_blank" rel="noreferrer">{person.website}</a></li>
+          <li>
+            <strong>E-Mail:</strong>{" "}
+            <a href={`mailto:${person.email}`}>{person.email}</a>
+          </li>
+          <li>
+            <strong>Telefon:</strong>{" "}
+            <a href={`tel:${person.phone}`}>{person.phone}</a>
+          </li>
+          <li>
+            <strong>Geburtstag:</strong> {bday}
+          </li>
+          <li>
+            <strong>Ort:</strong> {person.address.city},{" "}
+            {person.address.country}
+          </li>
+          <li>
+            <strong>Website:</strong>{" "}
+            <a href={person.website} target="_blank" rel="noreferrer">
+              {person.website}
+            </a>
+          </li>
         </ul>
       </div>
     </article>
