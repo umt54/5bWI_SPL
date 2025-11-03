@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 :root {
   --bg: #2d2b03;
   --card: #e6e6e6;
   --text: #111;
   --radius: 14px;
-  --shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  --mono-font: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
 }
 
 * {
@@ -16,7 +19,9 @@ body,
   height: 100%;
   margin: 0;
   background: var(--bg);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .page {
@@ -63,12 +68,15 @@ body,
   margin: 0 0 8px;
   font-size: 14px;
   font-weight: 700;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-
 .card-text {
   margin: 0;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 12px;
   line-height: 1.4;
   opacity: 0.85;
@@ -79,7 +87,9 @@ body,
   padding: 0;
   margin: 10px 0 0;
   font-size: 12px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
   line-height: 1.4;
 }
 
@@ -87,4 +97,14 @@ body,
   color: inherit;
   text-decoration: none;
   border-bottom: 1px dashed;
+}
+
+.loading {
+  display: flex; 
+  font-size: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #ebe3c417;
 }
